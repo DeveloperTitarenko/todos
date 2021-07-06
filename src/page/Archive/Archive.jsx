@@ -18,7 +18,7 @@ const Archive = () => {
         if (task.finished) {
           return (
             <div key={index}>
-              <Task task={task} setModalActive={setModalActive} setTaskId={setTaskId}/>
+              <Task key={index} task={task} setModalActive={setModalActive} setTaskId={setTaskId}/>
             </div>
           )
         }

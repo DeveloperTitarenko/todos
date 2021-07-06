@@ -15,6 +15,7 @@ const Users = () => {
           {users.map((user, index) => {
             return (
               <UserCard
+                key={index}
                 index={index}
                 username={user.username}
                 firstName={user.firstName}
