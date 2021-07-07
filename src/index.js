@@ -21,7 +21,7 @@ const history = createBrowserHistory();
 
 const store = createStore(rootReducer(history), compose(
   applyMiddleware(routerMiddleware(history),saga),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 ))
 
 saga.run(sagaWatcher)
